@@ -6,7 +6,7 @@ metadata:
     app: "goserver"
 spec:
   selector: 
-    matchlabels:
+    matchLabels:
       app: "goserver"
   replicas: 2
   template:
