@@ -8,5 +8,6 @@ spec:
   type: ClusterIP
   ports: 
   - name: goserver-http 
-    port: 8080 #Porta Destino
+    port: 80
+    targetPort: 8080
     protocol: TCP
