@@ -19,6 +19,12 @@ spec:
           image: "mgsantos89/hello-go:v7"
           env:
             - name: NAME
-              value: "Marco"
+              valueFrom:
+                configMapKeyRef:
+                  name: goserver-env
+                  key: NAME
             - name: AGE
-              value: "35"
+              valueFrom:
+                configMapKeyRef:
+                  name: goserver-env
+                  key: AGE
