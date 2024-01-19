@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: "goserver"
-          image: "mgsantos89/hello-go:v6"
+          image: "mgsantos89/hello-go:v7"
           env:
             - name: NAME
               value: "Marco"
